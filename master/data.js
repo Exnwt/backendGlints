@@ -10,14 +10,13 @@ app.get("/", (req, res) => {
     res.json({
       response:200,
       data:{
-          namaBarang:"meja",
+          namaBarang:"troley",
           harga:2000,
+          qty:123,
       }
     })
   });
   //testing
 
-app.post("/", (req, res)=>{
-    res.send("METHOD POST")
-})
+
 
