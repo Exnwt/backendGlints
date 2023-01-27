@@ -26,5 +26,5 @@ fetch('https://www.flickr.com/services/feeds/photos_public.gne?format=json')
   });
 
   app.get("/", (req,res)=> {
-    res.response(data)
+    res.send(data)
   })
