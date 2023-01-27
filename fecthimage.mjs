@@ -24,3 +24,7 @@ fetch('https://www.flickr.com/services/feeds/photos_public.gne?format=json')
     console.log(error);
     // Handle the error
   });
+
+  app.get("/", (req,res)=> {
+    res.response(data)
+  })
