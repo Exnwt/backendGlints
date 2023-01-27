@@ -32,6 +32,6 @@ async function flickr() {
 
   app.get("/", async (req,res)=> {
     const data = await flickr();
-    res.send(data);
+    res.json({data});
     console.log(data);
   })
